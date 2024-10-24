@@ -1,5 +1,5 @@
 resource "google_filestore_instance" "instance" {
-  name     = "test-instance"
+  name     = var.fs_name
   location = "us-central1"
   tier     = "STANDARD"
 
