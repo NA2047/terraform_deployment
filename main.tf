@@ -18,7 +18,7 @@ resource "google_filestore_instance" "instance" {
 resource "google_compute_disk" "default11" {
   name  = var.disk_name
   type  = "hyperdisk-throughput"
-  zone  = "us-central1a"
+  zone  = "us-central1-a"
   provisioned_iops = 49
   size = 5000
    lifecycle {
