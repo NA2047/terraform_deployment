@@ -1,4 +1,4 @@
-variable "disk_name" {
-    default = "Hd_PD"
+variable "fs_name" {
+    default = "fsinstance"
   
 }
