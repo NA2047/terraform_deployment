@@ -1,7 +1,7 @@
 resource "google_filestore_instance" "instance" {
-  name     = var.fs_name
+  name     = "test-instance"
   location = "us-central1"
-  tier     = "STANDARD"
+  tier     = "ENTERPRISE"
 
   file_shares {
     capacity_gb = 1024
@@ -12,5 +12,6 @@ resource "google_filestore_instance" "instance" {
     network = "default"
     modes   = ["MODE_IPV4"]
   }
+
 
 }
